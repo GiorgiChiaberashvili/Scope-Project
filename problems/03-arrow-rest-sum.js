@@ -11,9 +11,12 @@ arrowRestSum(0); // => 0
 ***********************************************************************/
 
 const arrowRestSum = (...otherNums) => {
-  // Your code here
-};
-
+    let sum = 0;
+        for(const el of otherNums){
+        sum += el
+        };
+    return sum
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = arrowRestSum;
